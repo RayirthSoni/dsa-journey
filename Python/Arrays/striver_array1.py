@@ -4,20 +4,24 @@
 # Remove Duplicates from Sorted Array
 
 def get_largest(my_list):
-    pass
+    maximum_element = float('-inf')
+    for element in my_list:
+        if element > maximum_element:
+            maximum_element = element
+    return maximum_element
 
 
 def get_smallest(my_list):
-    pass
+    minimum_element = float('inf')
+    for element in my_list:
+        if element < minimum_element:
+            minimum_element = element
+    return minimum_element
 
 
 def get_second_largest(my_list):
 
-    for element in sorted(my_list)[-1::-1]:
-        if element != my_list[-1]:
-            return element
-
-    return 'All Elements are Equal'
+    
 
 
 def get_second_smallest(my_list):
