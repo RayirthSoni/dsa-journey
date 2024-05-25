@@ -4,11 +4,11 @@
 # Remove Duplicates from Sorted Array
 
 def get_largest(my_list):
-    return sorted(my_list)[-1]
+    pass
 
 
 def get_smallest(my_list):
-    return sorted(my_list)[0]
+    pass
 
 
 def get_second_largest(my_list):
