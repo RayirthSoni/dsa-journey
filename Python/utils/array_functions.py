@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_largest(my_list):
     """returns the largest element in a list
 
@@ -7,7 +9,13 @@ def get_largest(my_list):
     Returns:
         numeric: largest element in the list
     """
-    return sorted(my_list)[-1]
+    maximum_element = -np.inf
+    
+    for element in my_list:
+        if element > maximum_element:
+            maximum_element = element
+    
+    return maximum_element
 
 
 def get_smallest(my_list):
@@ -19,7 +27,14 @@ def get_smallest(my_list):
     Returns:
         numeric: smallest element in the list
     """
-    return sorted(my_list)[0]
+    minimum_element = np.inf
+    
+    for element in my_list:
+        if element < minimum_element:
+            minimum_element = element
+    
+    return minimum_element
+
 
 
 def get_second_largest(my_list):
@@ -31,14 +46,17 @@ def get_second_largest(my_list):
     Returns:
         numeric: second largest element in the list
     """
+    maximum_element = = -np.inf
+    second_maximum_element = -np.inf
     
-    sorted_list = sorted(my_list)
+    for element in my_list:
+        if element > maximum_element:
+            second_maximum_element = maximum_element
+            maximum_element = element
+        elif element < maximum_element and element > second_maximum_element:
+            second_maximum_element = element
     
-    for element in sorted_list[::-1]:
-        if element != sorted_list[-1]:
-            return element
-    
-    return 'All elements are equal.'
+    return second_maximum_element
 
 
 def get_second_smallest(my_list):
@@ -50,10 +68,15 @@ def get_second_smallest(my_list):
     Returns:
         numeric: second smallest element in the list
     """
-    sorted_list = sorted(my_list)
-
-    for element in sorted_list:
-        if element != sorted_list[0]:
-            return element
-
-    return 'All elements are equal.'
+    
+    minimum_element = np.inf
+    second_minimum_element = np.inf
+    
+    for element in my_list:
+        if element < minimum_element:
+            second_minimum_element = minimum_element
+            minimum_element = element
+        elif element > minimum_element and element < second_minimum_element:
+            second_minimum_element = element
+            
+    return second_minimum_element
