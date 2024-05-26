@@ -46,7 +46,7 @@ def get_second_largest(my_list):
     Returns:
         numeric: second largest element in the list
     """
-    maximum_element = = -np.inf
+    maximum_element = -np.inf
     second_maximum_element = -np.inf
     
     for element in my_list:
