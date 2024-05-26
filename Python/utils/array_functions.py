@@ -107,4 +107,13 @@ def remove_duplicates_from_sorted(my_list):
     Returns:
         list: sorted list after removing duplicates
     """
-    pass
+    sorted_list = sorted(my_list)
+    size = len(sorted_list)
+    unique_index = 0
+    
+    for index in range(1, size):
+        if sorted_list[unique_index] != sorted_list[index]:
+            sorted_list[unique_index + 1] = sorted_list[index]
+            unique_index += 1
+    
+    return sorted_list[:unique_index+1]
