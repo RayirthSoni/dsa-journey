@@ -117,3 +117,42 @@ def remove_duplicates_from_sorted(my_list):
             unique_index += 1
     
     return sorted_list[:unique_index+1]
+
+
+def linear_search(my_list, search_element):
+    """performs linear search algorithm
+
+    Args:
+        my_list (list): list from which want to search element
+        search_element (numeric): element you want to search in list
+
+    Returns:
+        numeric: index at which the element being searched is present in the list
+    """
+    
+    for element in my_list:
+        if element == search_element:
+            return my_list.index(element)
+    
+    return 'Not present in the list'
+
+
+def left_rotate(my_list, rte):
+    pass
+
+
+def right_rotate(my_list, rte):
+    pass
+
+
+def move_zeores_end(my_list):
+    pass
+
+
+def get_union():
+    pass
+
+
+def get_intersection():
+    pass
+
