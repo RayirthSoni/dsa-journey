@@ -2,6 +2,8 @@
 This script contains basic questions on conditional statements
 """
 
+# Ignore pylint warnings
+# pylint: disable=line-too-long
 
 def get_grade(marks: int) -> str:
     """Function is used to get grade for marks scored
