@@ -36,7 +36,40 @@ class Pattern:
                 print(pattern)
 
     class Triangle:
-        pass
+
+        @staticmethod
+        def get_increasing_triangle_brute(n: int) -> None:
+            """
+            Function is used to get increasing triangle pattern using brute force approach
+
+            Args:
+                n (int): Size of triangle pattern
+            
+            """
+            for i in range(n):
+                for j in range(i + 1):
+                    print("*", end="")
+                print()
+
+        @staticmethod
+        def get_increasing_triangle_optimized(n: int) -> None:
+            """
+            Function is used to get increasing triangle pattern using optimized approach
+
+            Args:
+                n (int): Size of triangle pattern
+            """
+            for i in range(n):
+                pattern = "*" * (i + 1)
+                print(pattern)
+
+        @staticmethod
+        def get_increasing_triangle_numbers_brute(n: int) -> None:
+            for i in range(1, n+1):
+                for j in range(i):
+                    print(j, end="")
+                print()
+
 
     class Rhombus:
         pass

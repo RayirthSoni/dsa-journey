@@ -8,4 +8,8 @@ This script contains questions on pattern questions based on looping concepts
 from utils.patterns import Pattern
 
 
-Pattern.Square.get_brute_pattern(5)
+# Pattern.Triangle.get_increasing_triangle_brute(5)
+# print('1' + str(int('1') + 1))
+# clPattern.Square.get_optimized_pattern(3)
+
+# print(range(1,1))
