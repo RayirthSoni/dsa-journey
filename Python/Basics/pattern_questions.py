@@ -70,7 +70,10 @@ def get_increasing_triangle_pattern_col(n: int) -> None:
 
 
 def get_increasing_triangle_pattern_row(n: int) -> None:
-    pass
+    for i in range(1, n+1):
+        for j in range(i):
+            print(i, end='')
+        print()
 
 
 def decreasing_triangle_pattern_row(n: int) -> None:
@@ -81,4 +84,4 @@ def decreasing_triangle_pattern_col(n: int) -> None:
     pass
 
 
-get_increasing_triangle_pattern_col(9)
+get_increasing_triangle_pattern_row(9)
