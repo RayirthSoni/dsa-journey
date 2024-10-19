@@ -31,3 +31,28 @@ def get_square_pattern_optimal(n: int) -> None:
         print(pattern)
 
 
+def get_increasing_triangle_pattern_brute(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of stars in brute force way
+
+    Args:
+        n (int): Size of pattern
+    """
+
+    for i in range(n):
+        for j in range(i + 1):
+            print("*", end="")
+        print()
+
+
+def get_increasing_triangle_pattern_optimal(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of stars in optimal way
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        print("*" * (i + 1))
+
+
