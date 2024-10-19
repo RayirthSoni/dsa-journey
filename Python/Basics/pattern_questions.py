@@ -56,3 +56,29 @@ def get_increasing_triangle_pattern_optimal(n: int) -> None:
         print("*" * (i + 1))
 
 
+def get_increasing_triangle_pattern_col(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of numbers representing cols
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            print(j, end="")
+        print()
+
+
+def get_increasing_triangle_pattern_row(n: int) -> None:
+    pass
+
+
+def decreasing_triangle_pattern_row(n: int) -> None:
+    pass
+
+
+def decreasing_triangle_pattern_col(n: int) -> None:
+    pass
+
+
+get_increasing_triangle_pattern_col(9)
