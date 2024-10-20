@@ -139,4 +139,13 @@ def get_triangle_pattern_optimal(n: int) -> None:
         print(" " * (n - 1 - i) + "*" * (2 * i + 1))
 
 
-# def
+def get_binary_triangle_pattern(n: int) -> None:
+    """Function is used to print binary triangle pattern
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(0, end="") if (i + j) % 2 == 0 else print(1, end="")
+        print()
