@@ -123,9 +123,10 @@ def get_triangle_pattern_brute(n: int) -> None:
     for i in range(n):
         for _ in range(n - 1 - i):
             print(" ", end="")
-        for _ in range(2 * i +  1):
+        for _ in range(2 * i + 1):
             print("*", end="")
         print()
+
 
 def get_triangle_pattern_optimal(n: int) -> None:
     """
@@ -134,12 +135,8 @@ def get_triangle_pattern_optimal(n: int) -> None:
     Args:
         n (int): Size of pattern
     """
-    
+    for i in range(n):
+        print(" " * (n - 1 - i) + "*" * (2 * i + 1))
 
 
-
-# get_triangle_pattern_brute(1)
-# get_triangle_pattern_brute(2)
-# get_triangle_pattern_brute(3)
-# get_triangle_pattern_brute(4)
-get_triangle_pattern_brute(5)
+# def
