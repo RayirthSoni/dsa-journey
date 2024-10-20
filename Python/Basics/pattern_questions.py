@@ -166,4 +166,50 @@ def get_increasing_number_triangle_pattern(n: int) -> None:
             cnt += 1
         print()
 
-get_increasing_number_triangle_pattern(4)
+
+def get_increasing_triangle_pattern_chars_cols(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of characters
+
+    Args:
+        n (int): Size of pattern
+    """
+    char = 'A'
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord(char) + j), end="")
+        print()
+
+
+def get_increasing_triangle_pattern_chars_rows(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of characters
+
+    Args:
+        n (int): Size of pattern
+    """
+    char = 'A'
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord(char) + i - 1), end="")
+        print()
+
+
+def get_decreasing_triangle_pattern_chars_cols(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of characters
+
+    Args:
+        n (int): Size of pattern
+    """
+    pass
+
+
+def get_decreasing_triangle_pattern_chars_rows(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of characters
+
+    Args:
+        n (int): Size of pattern
+    """
+    pass
