@@ -150,3 +150,20 @@ def get_binary_triangle_pattern(n: int) -> None:
         for j in range(i):
             print(0, end="") if (i + j) % 2 == 0 else print(1, end="")
         print()
+
+
+def get_increasing_number_triangle_pattern(n: int) -> None:
+    """
+    Function is used to print increasing number triangle pattern
+
+    Args:
+        n (int): Size of pattern
+    """
+    cnt = 1
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(cnt, end=" ")
+            cnt += 1
+        print()
+
+get_increasing_number_triangle_pattern(4)
