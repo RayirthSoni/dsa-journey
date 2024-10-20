@@ -70,18 +70,46 @@ def get_increasing_triangle_pattern_col(n: int) -> None:
 
 
 def get_increasing_triangle_pattern_row(n: int) -> None:
+    """
+    Function is used to print increasing triangle pattern of numbers representing rows
+
+    Args:
+        n (int): Size of pattern
+    """
     for i in range(1, n+1):
         for j in range(i):
             print(i, end='')
         print()
 
 
-def decreasing_triangle_pattern_row(n: int) -> None:
-    pass
+def decreasing_triangle_pattern_brute(n: int) -> None:
+    """Function is used to print decreasing triangle pattern of stars in brute force way
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        for j in range(n,i,-1):
+            print("*", end="")
+        print()
+
+
+def decreasing_triangle_pattern_optimal(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of stars in optimal way
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        print("*" * (n - i))
 
 
 def decreasing_triangle_pattern_col(n: int) -> None:
     pass
 
 
-get_increasing_triangle_pattern_row(9)
+def decreasing_triangle_pattern_row(n: int) -> None:
+    pass
+
+
