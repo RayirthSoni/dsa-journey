@@ -140,7 +140,8 @@ def get_triangle_pattern_optimal(n: int) -> None:
 
 
 def get_binary_triangle_pattern(n: int) -> None:
-    """Function is used to print binary triangle pattern
+    """
+    Function is used to print binary triangle pattern
 
     Args:
         n (int): Size of pattern
