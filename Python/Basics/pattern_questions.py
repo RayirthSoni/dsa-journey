@@ -239,9 +239,30 @@ def get_triangle_pattern_chars(n: int) -> None:
 
 
 def get_decreasing_triangle_pattern_chars(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of characters
+
+    Args:
+        n (int): Size of pattern
+    """
     char = "A"
     for i in range(1, n + 1):
         for j in range(i):
             print(chr(ord(char) + n - i + j), end="")
         print()
 
+
+def get_hollow_diamond(n: int) -> None:
+    """
+    Function is used to get hollow diamond pattern
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        for j in range(n):
+            if (i == 0) or (i == n - 1) or (j == 0) or (j == n - 1):
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()
