@@ -232,3 +232,16 @@ def get_decreasing_triangle_pattern_chars_rows(n: int) -> None:
         n (int): Size of pattern
     """
     pass
+
+
+def get_triangle_pattern_chars(n: int) -> None:
+    pass
+
+
+def get_decreasing_triangle_pattern_chars(n: int) -> None:
+    char = "A"
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord(char) + n - i + j), end="")
+        print()
+
