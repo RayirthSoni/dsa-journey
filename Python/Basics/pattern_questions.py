@@ -83,7 +83,8 @@ def get_increasing_triangle_pattern_row(n: int) -> None:
 
 
 def decreasing_triangle_pattern_brute(n: int) -> None:
-    """Function is used to print decreasing triangle pattern of stars in brute force way
+    """
+    Function is used to print decreasing triangle pattern of stars in brute force way
 
     Args:
         n (int): Size of pattern
@@ -94,7 +95,7 @@ def decreasing_triangle_pattern_brute(n: int) -> None:
         print()
 
 
-def decreasing_triangle_pattern_optimal(n: int) -> None:
+def get_decreasing_triangle_pattern_optimal(n: int) -> None:
     """
     Function is used to print decreasing triangle pattern of stars in optimal way
 
@@ -105,12 +106,30 @@ def decreasing_triangle_pattern_optimal(n: int) -> None:
         print("*" * (n - i))
 
 
-def decreasing_triangle_pattern_col(n: int) -> None:
-    pass
+def get_decreasing_triangle_pattern_col(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of numbers representing cols
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        for j in range(1, n - i + 1):
+            print(j, end="")
+        print()
 
 
-def decreasing_triangle_pattern_row(n: int) -> None:
-    pass
+def get_decreasing_triangle_pattern_row(n: int) -> None:
+    """
+    Function is used to print decreasing triangle pattern of numbers representing rows
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        for j in range(n - i):
+            print(n - i, end="")
+        print()
 
 
 def get_triangle_pattern_brute(n: int) -> None:
@@ -174,7 +193,7 @@ def get_increasing_triangle_pattern_chars_cols(n: int) -> None:
     Args:
         n (int): Size of pattern
     """
-    char = 'A'
+    char = "A"
     for i in range(1, n + 1):
         for j in range(i):
             print(chr(ord(char) + j), end="")
@@ -188,7 +207,7 @@ def get_increasing_triangle_pattern_chars_rows(n: int) -> None:
     Args:
         n (int): Size of pattern
     """
-    char = 'A'
+    char = "A"
     for i in range(1, n + 1):
         for j in range(i):
             print(chr(ord(char) + i - 1), end="")
