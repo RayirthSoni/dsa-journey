@@ -266,3 +266,13 @@ def get_hollow_diamond(n: int) -> None:
             else:
                 print(" ", end="")
         print()
+
+def get_butterfly_pattern(n: int) -> None:
+    """
+    Function is used to print butterfly pattern
+
+    Args:
+        n (int): Size of pattern
+    """
+    for i in range(n):
+        pass
