@@ -6,273 +6,80 @@ This script contains questions on pattern questions based on looping concepts
 # pylint: disable=line-too-long
 
 
-def get_square_pattern_brute(n: int) -> None:
+def get_square_pattern(n):
     """
-    Function is used to print square pattern of stars in brute force way
+    Function is used to print square pattern of stars
 
     Args:
         n (int): Size of pattern
+
+    Example: 
+        Input: n = 3
+        Output: 
+            * * *
+            * * *
+            * * *
     """
     for i in range(n):
         for j in range(n):
-            print("*", end="")
+            print('*', end='')
         print()
 
 
-def get_square_pattern_optimal(n: int) -> None:
+def get_increasing_triangle_pattern_stars(n):
     """
-    Function is used to print square pattern of stars in optimal way
+    Function is used to print increasing pattern of triangle stars
 
     Args:
         n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            * 
+            * * 
+            * * *
     """
-    pattern = "*" * n
-    for _ in range(n):
-        print(pattern)
-
-
-def get_increasing_triangle_pattern_brute(n: int) -> None:
-    """
-    Function is used to print increasing triangle pattern of stars in brute force way
-
-    Args:
-        n (int): Size of pattern
-    """
-
     for i in range(n):
         for j in range(i + 1):
-            print("*", end="")
+            print('*', end='')
         print()
 
 
-def get_increasing_triangle_pattern_optimal(n: int) -> None:
+def get_increasing_triangle_pattern_cols(n):
     """
-    Function is used to print increasing triangle pattern of stars in optimal way
+    Function is used to print increasing pattern of triangle numbers columns
 
     Args:
         n (int): Size of pattern
-    """
-    for i in range(n):
-        print("*" * (i + 1))
 
-
-def get_increasing_triangle_pattern_col(n: int) -> None:
-    """
-    Function is used to print increasing triangle pattern of numbers representing cols
-
-    Args:
-        n (int): Size of pattern
+    Example:
+        Input: n = 3
+        Output:
+            1
+            1 2 
+            1 2 3
     """
     for i in range(1, n + 1):
         for j in range(1, i + 1):
-            print(j, end="")
+            print(j, end='')
         print()
 
 
-def get_increasing_triangle_pattern_row(n: int) -> None:
+def get_increasing_triangle_pattern_rows(n):
     """
-    Function is used to print increasing triangle pattern of numbers representing rows
+    Function is used to print increasing pattern of traingle numbers row
 
     Args:
         n (int): Size of pattern
-    """
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(i, end="")
-        print()
 
-
-def decreasing_triangle_pattern_brute(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of stars in brute force way
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        for j in range(n, i, -1):
-            print("*", end="")
-        print()
-
-
-def get_decreasing_triangle_pattern_optimal(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of stars in optimal way
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        print("*" * (n - i))
-
-
-def get_decreasing_triangle_pattern_col(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of numbers representing cols
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        for j in range(1, n - i + 1):
-            print(j, end="")
-        print()
-
-
-def get_decreasing_triangle_pattern_row(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of numbers representing rows
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        for j in range(n - i):
-            print(n - i, end="")
-        print()
-
-
-def get_triangle_pattern_brute(n: int) -> None:
-    """
-    Function is used to get triangle pattern of stars in brute force way
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        for _ in range(n - 1 - i):
-            print(" ", end="")
-        for _ in range(2 * i + 1):
-            print("*", end="")
-        print()
-
-
-def get_triangle_pattern_optimal(n: int) -> None:
-    """
-    Function is used to get triangle pattern of stars in optimal way
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        print(" " * (n - 1 - i) + "*" * (2 * i + 1))
-
-
-def get_binary_triangle_pattern(n: int) -> None:
-    """
-    Function is used to print binary triangle pattern
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(0, end="") if (i + j) % 2 == 0 else print(1, end="")
-        print()
-
-
-def get_increasing_number_triangle_pattern(n: int) -> None:
-    """
-    Function is used to print increasing number triangle pattern
-
-    Args:
-        n (int): Size of pattern
-    """
-    cnt = 1
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(cnt, end=" ")
-            cnt += 1
-        print()
-
-
-def get_increasing_triangle_pattern_chars_cols(n: int) -> None:
-    """
-    Function is used to print increasing triangle pattern of characters
-
-    Args:
-        n (int): Size of pattern
-    """
-    char = "A"
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(chr(ord(char) + j), end="")
-        print()
-
-
-def get_increasing_triangle_pattern_chars_rows(n: int) -> None:
-    """
-    Function is used to print increasing triangle pattern of characters
-
-    Args:
-        n (int): Size of pattern
-    """
-    char = "A"
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(chr(ord(char) + i - 1), end="")
-        print()
-
-
-def get_decreasing_triangle_pattern_chars_cols(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of characters
-
-    Args:
-        n (int): Size of pattern
+    Example:
+        Input: n = 3
+        Output:
+            1
+            2 2
+            3 3 3
     """
     pass
 
 
-def get_decreasing_triangle_pattern_chars_rows(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of characters
-
-    Args:
-        n (int): Size of pattern
-    """
-    pass
-
-
-def get_triangle_pattern_chars(n: int) -> None:
-    pass
-
-
-def get_decreasing_triangle_pattern_chars(n: int) -> None:
-    """
-    Function is used to print decreasing triangle pattern of characters
-
-    Args:
-        n (int): Size of pattern
-    """
-    char = "A"
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(chr(ord(char) + n - i + j), end="")
-        print()
-
-
-def get_hollow_diamond(n: int) -> None:
-    """
-    Function is used to get hollow diamond pattern
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        for j in range(n):
-            if (i == 0) or (i == n - 1) or (j == 0) or (j == n - 1):
-                print("*", end="")
-            else:
-                print(" ", end="")
-        print()
-
-def get_butterfly_pattern(n: int) -> None:
-    """
-    Function is used to print butterfly pattern
-
-    Args:
-        n (int): Size of pattern
-    """
-    for i in range(n):
-        pass
