@@ -83,3 +83,24 @@ def get_increasing_triangle_pattern_rows(n):
     pass
 
 
+def get_decreasing_triangle_pattern_stars(n):
+    pass
+
+
+def get_decreasing_triangle_pattern_rows(n):
+    pass
+
+
+def get_decreasing_triangle_pattern_cols(n):
+    pass
+
+def get_triangle_pattern(n):
+    pass
+
+def get_inverted_triangle_pattern(n):
+    pass
+
+def get_rhombus_pattern(n):
+    pass
+
+
