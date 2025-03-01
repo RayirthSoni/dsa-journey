@@ -4,6 +4,7 @@ This script contains questions on pattern questions based on looping concepts
 
 # Ignore pylint warnings
 # pylint: disable=line-too-long
+# pylint: disable=expression-not-assigned
 
 
 def get_rectangular_star(n):
@@ -215,13 +216,101 @@ def get_diamond_star(n):
     get_inverted_star_pyramid(n)
 
 
-
-def get_right_half_rhombus():
+def get_half_diamond_star():
     pass
 
 
-def get_left_half_rhombus():
+def get_inverted_half_diamond_star():
     pass
 
 
-def 
+def get_binary_number_triangle(n):
+    """
+    Function is used to print binary number triangle pattern
+
+    Args:
+        n (int): Size of pattern
+
+
+    Example:
+        Input: n = 3
+        Output:
+            1
+            01
+            101
+    """
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(1, end="") if (((i + j) % 2) != 0) else print(0, end="")
+        print()
+
+
+def get_number_crown_pattern(n):
+    """
+    Function is used to print number crown pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            1    1
+            12  21
+            123321
+    """
+    pass
+
+
+def get_increasing_number_triangle(n):
+    """
+    Function is used to print increasing number triangle pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            1
+            2 3
+            4 5 6
+    """
+    pass
+
+
+def get_increasing_letter_triangle(n):
+    """
+    Function is used to print increasing letter triangle pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            A
+            A B
+            A B C
+    """
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord("A") + j), end=" ")
+        print()
+
+
+def get_reverse_letter_triangle(n):
+    """
+    Function is used to print reverse letter triangle
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            A B C
+            A B
+            A
+    """
+    pass
