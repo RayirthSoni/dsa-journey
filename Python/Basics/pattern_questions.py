@@ -6,9 +6,9 @@ This script contains questions on pattern questions based on looping concepts
 # pylint: disable=line-too-long
 
 
-def get_square_pattern(n):
+def get_rectangular_star(n):
     """
-    Function is used to print square pattern of stars
+    Function is used to print rectangular pattern of stars
 
     Args:
         n (int): Size of pattern
@@ -26,9 +26,9 @@ def get_square_pattern(n):
         print()
 
 
-def get_increasing_triangle_pattern_stars(n):
+def get_right_angle_triangle(n):
     """
-    Function is used to print increasing pattern of triangle stars
+    Function is used to print right angled * triangle pattern
 
     Args:
         n (int): Size of pattern
@@ -46,9 +46,9 @@ def get_increasing_triangle_pattern_stars(n):
         print()
 
 
-def get_increasing_triangle_pattern_cols(n):
+def get_right_angle_number_pyramid(n):
     """
-    Function is used to print increasing pattern of triangle numbers columns
+    Function is used to print right angled number pyramid pattern
 
     Args:
         n (int): Size of pattern
@@ -66,9 +66,9 @@ def get_increasing_triangle_pattern_cols(n):
         print()
 
 
-def get_increasing_triangle_pattern_rows(n):
+def get_right_angled_number_pyramid_2(n):
     """
-    Function is used to print increasing pattern of traingle numbers row
+    Function is used to print right angled number pyramid pattern - 2
 
     Args:
         n (int): Size of pattern
@@ -86,9 +86,9 @@ def get_increasing_triangle_pattern_rows(n):
         print()
 
 
-def get_decreasing_triangle_pattern_stars(n):
+def get_inverted_right_pyramid(n):
     """
-    Function is used to print decreasing pattern of triangle stars
+    Function is used to print inverted right * pyramid pattern
 
     Args:
         n (int): Size of pattern
@@ -106,9 +106,9 @@ def get_decreasing_triangle_pattern_stars(n):
         print()
 
 
-def get_decreasing_triangle_pattern_cols(n):
+def get_inverted_right_number_pyramid(n):
     """
-    Function is used to print decreasing pattern of triangle numbers row
+    Function is used to print inverted right number pyramid pattern
 
     Args:
         n (int): Size of pattern
@@ -126,9 +126,9 @@ def get_decreasing_triangle_pattern_cols(n):
         print()
 
 
-def get_decreasing_triangle_pattern_rows(n):
+def get_inverted_right_number_pyramid_2(n):
     """
-    Function is used to print decreasing pattern of triangle numbers columns
+    Function is used to print inverted right number pyramid pattern - 2
 
     Args:
         n (int): Size of pattern
@@ -146,9 +146,9 @@ def get_decreasing_triangle_pattern_rows(n):
         print()
 
 
-def get_triangle_pattern(n):
+def get_star_pyramid(n):
     """
-    Function is used to print triangle pattern
+    Function is used to print star pyramid pattern
 
     Args:
         n (int): Size of pattern
@@ -170,9 +170,9 @@ def get_triangle_pattern(n):
         print()
 
 
-def get_inverted_triangle_pattern(n):
+def get_inverted_star_pyramid(n):
     """
-    Function is used to print triangle pattern in inverted manner
+    Function is used to print inverted star pyramid pattern
 
     Args:
         n (int): Size of pattern
@@ -194,9 +194,9 @@ def get_inverted_triangle_pattern(n):
         print()
 
 
-def get_rhombus_pattern(n):
+def get_diamond_star(n):
     """
-    Function is used to print rhombus pattern
+    Function is used to print diamond star pattern
 
     Args:
         n (int): Size of pattern
@@ -211,6 +211,17 @@ def get_rhombus_pattern(n):
            ***
             *
     """
-    get_triangle_pattern(n)
-    get_inverted_triangle_pattern(n)
+    get_star_pyramid(n)
+    get_inverted_star_pyramid(n)
 
+
+
+def get_right_half_rhombus():
+    pass
+
+
+def get_left_half_rhombus():
+    pass
+
+
+def 
