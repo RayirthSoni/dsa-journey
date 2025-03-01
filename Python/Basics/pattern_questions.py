@@ -147,12 +147,70 @@ def get_decreasing_triangle_pattern_rows(n):
 
 
 def get_triangle_pattern(n):
-    pass
+    """
+    Function is used to print triangle pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            *
+           ***
+          *****
+    """
+    for i in range(1, n + 1):
+        for j in range(n - i):
+            print(" ", end="")
+
+        for j in range(2 * i - 1):
+            print("*", end="")
+
+        print()
 
 
 def get_inverted_triangle_pattern(n):
-    pass
+    """
+    Function is used to print triangle pattern in inverted manner
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+          *****
+           ***
+            *
+    """
+    for i in range(n, 0, -1):
+        for j in range(n - i):
+            print(" ", end="")
+
+        for j in range(2 * i - 1):
+            print("*", end="")
+
+        print()
 
 
 def get_rhombus_pattern(n):
-    pass
+    """
+    Function is used to print rhombus pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            *
+           ***
+          *****
+          *****
+           ***
+            *
+    """
+    get_triangle_pattern(n)
+    get_inverted_triangle_pattern(n)
+
