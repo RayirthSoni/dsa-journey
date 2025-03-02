@@ -1,5 +1,7 @@
 """
 This script contains questions on pattern questions based on looping concepts
+
+Questions: https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
 """
 
 # Ignore pylint warnings
@@ -401,3 +403,58 @@ def get_symmetric_void(n):
             ******
     """
     pass
+
+
+def get_symmetric_butterfly(n):
+    """
+    Functions is used tor print symmetric butterfly pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+            *    *
+            **  **
+            ******
+            **  **
+            *    *
+    """
+    pass
+
+def get_hollow_rectangle(n):
+    """
+    Function is used to print hollow rectangle pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+            ***
+            * *
+            ***
+    """
+    pass
+
+def get_number_pattern(n):
+    """
+    Function is used to print number pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Ouput: 
+            3 3 3 3 3 
+            3 2 2 2 3 
+            3 2 1 2 3 
+            3 2 2 2 3 
+            3 3 3 3 3
+    """
+    pass
+
+
