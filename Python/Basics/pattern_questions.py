@@ -242,6 +242,7 @@ def get_half_diamond_star(n):
 
         print()
 
+
 def get_inverted_half_diamond_star(n):
     """
     Function is used to print half diamond star pattern
@@ -258,7 +259,16 @@ def get_inverted_half_diamond_star(n):
              **
               *
     """
-    pass
+    for i in range(2 * n - 1):
+        k = n - 1 - i if i < n else i - n + 1
+        for j in range(k):
+            print(" ", end="")
+
+        k = i + 1 if i < n else 2 * n - i - 1
+        for j in range(k):
+            print("*", end="")
+
+        print()
 
 
 def get_binary_number_triangle(n):
