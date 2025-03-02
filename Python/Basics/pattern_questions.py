@@ -334,7 +334,12 @@ def get_increasing_number_triangle(n):
             2 3
             4 5 6
     """
-    pass
+    k = 0
+    for i in range(n):
+        for j in range(i + 1):
+            k += 1
+            print(k, end=" ")
+        print()
 
 
 def get_increasing_letter_triangle(n):
