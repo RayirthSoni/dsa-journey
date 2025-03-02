@@ -234,8 +234,13 @@ def get_half_diamond_star(n):
             **
             *
     """
-    pass
+    for i in range(1, 2 * n):
+        k = 2 * n - i if i > n else i
 
+        for _ in range(k):
+            print("*", end="")
+
+        print()
 
 def get_inverted_half_diamond_star(n):
     """
