@@ -423,6 +423,7 @@ def get_symmetric_butterfly(n):
     """
     pass
 
+
 def get_hollow_rectangle(n):
     """
     Function is used to print hollow rectangle pattern
@@ -439,6 +440,7 @@ def get_hollow_rectangle(n):
     """
     pass
 
+
 def get_number_pattern(n):
     """
     Function is used to print number pattern
@@ -448,13 +450,11 @@ def get_number_pattern(n):
 
     Example:
         Input: n = 3
-        Ouput: 
-            3 3 3 3 3 
-            3 2 2 2 3 
-            3 2 1 2 3 
-            3 2 2 2 3 
+        Ouput:
+            3 3 3 3 3
+            3 2 2 2 3
+            3 2 1 2 3
+            3 2 2 2 3
             3 3 3 3 3
     """
     pass
-
-
