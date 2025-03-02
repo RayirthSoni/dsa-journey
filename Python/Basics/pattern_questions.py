@@ -313,4 +313,91 @@ def get_reverse_letter_triangle(n):
             A B
             A
     """
+    for i in range(n, 0, -1):
+        for j in range(i):
+            print(chr(ord("A") + j), end=" ")
+        print()
+
+
+def get_alpha_ramp(n):
+    """
+    Function is used to print alpha ramp pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+            A
+            B B
+            C C C
+    """
+    for i in range(n):
+        for j in range(i + 1):
+            print(chr(ord("A") + i), end=" ")
+        print()
+
+
+def get_alpha_hill(n):
+    """
+    Function is used to print alpha hill pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+              A
+             ABA
+            ABCBA
+    """
+    for i in range(n):
+        for j in range():
+            pass
+
+        for j in range():
+            pass
+
+        print()
+
+
+def get_alpha_trinangle(n):
+    """
+    Function is used to print alpha triangle pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+            C
+            B C
+            A B C
+    """
+    for i in range():
+        for j in range():
+            print(chr(ord("A") + i - j), end=" ")
+        print()
+
+
+def get_symmetric_void(n):
+    """
+    Function is used to print symmetric void pattern
+
+    Args:
+        n (int): Size of pattern
+
+    Example:
+        Input: n = 3
+        Output:
+            ******
+            **  **
+            *    *
+            *    *
+            **  **
+            ******
+    """
     pass
