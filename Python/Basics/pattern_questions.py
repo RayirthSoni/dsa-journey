@@ -218,11 +218,41 @@ def get_diamond_star(n):
     get_inverted_star_pyramid(n)
 
 
-def get_half_diamond_star():
+def get_half_diamond_star(n):
+    """
+    Function is used to print half diamond star pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+            *
+            **
+            ***
+            **
+            *
+    """
     pass
 
 
-def get_inverted_half_diamond_star():
+def get_inverted_half_diamond_star(n):
+    """
+    Function is used to print half diamond star pattern
+
+    Args:
+        n (int): Size of input
+
+    Example:
+        Input: n = 3
+        Output:
+              *
+             **
+            ***
+             **
+              *
+    """
     pass
 
 
@@ -421,7 +451,17 @@ def get_symmetric_butterfly(n):
             **  **
             *    *
     """
-    pass
+    for i in range():
+        for j in range():
+            pass
+
+        for j in range():
+            pass
+
+        for j in range():
+            pass
+
+        print()
 
 
 def get_hollow_rectangle(n):
