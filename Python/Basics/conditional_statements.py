@@ -38,3 +38,32 @@ def get_grade(marks: int):
         print("Grade: A")
     else:
         print("Invalid Marks !")
+
+
+def get_day(day: int):
+    """
+    Function is used to print the day based on number
+
+    Args:
+        day (int): Count of day in week based on which day name needs to be printed
+    """
+
+    match day:
+
+        case 1:
+            print("Monday")
+        case 2:
+            print("Tuesday")
+        case 3:
+            print("Wednesday")
+        case 4:
+            print("Thursday")
+        case 5:
+            print("Friday")
+        case 6:
+            print("Saturday")
+        case 7:
+            print("Sunday")
+        case _:
+            print("Invalid day.")
+
