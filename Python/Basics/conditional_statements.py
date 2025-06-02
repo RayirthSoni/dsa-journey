@@ -1,6 +1,6 @@
-'''
+"""
 This script contains questions based on conditional statements.
-'''
+"""
 
 
 def can_vote(age: int):
@@ -16,3 +16,25 @@ def can_vote(age: int):
         print("Person can't vote.")
 
 
+def get_grade(marks: int):
+    """
+    Function is used to print grade of the individual based on their marks
+
+    Args:
+        marks (int): Marks of individual for which we need to print the grade
+    """
+
+    if marks < 25:
+        print("Grade: F")
+    elif marks <= 44:
+        print("Grade: E")
+    elif marks <= 49:
+        print("Grade: D")
+    elif marks <= 59:
+        print("Grade: C")
+    elif marks <= 69:
+        print("Grade: B")
+    elif marks <= 100:
+        print("Grade: A")
+    else:
+        print("Invalid Marks !")
