@@ -68,7 +68,8 @@ def get_right_angled_triangle_number_pattern(n: int):
 
 
 def get_right_angled_triangle_number_2_pattern(n: int):
-    """Function is used to print 2nd right angled triangle number pattern
+    """
+    Function is used to print 2nd right angled triangle number pattern
 
     Args:
         n (int): Number of rows
