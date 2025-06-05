@@ -1,7 +1,6 @@
-'''
+"""
 This script contains the questions based on patterns on looping concepts
-'''
-
+"""
 
 ## Ignore pylint warnings
 ## pylint: disable=line-too-long
@@ -25,7 +24,7 @@ def get_rectangular_pattern(n: int):
     """
     for i in range(n):
         for j in range(n):
-            print("*", end='')
+            print("*", end="")
         print()
 
 
@@ -43,9 +42,9 @@ def get_right_angled_triangle_star_pattern(n: int):
         ****
         *****
     """
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         for j in range(i):
-            print("*", end='')
+            print("*", end="")
         print()
 
 
@@ -84,7 +83,7 @@ def get_right_angled_triangle_number_2_pattern(n: int):
     """
     for i in range(1, n + 1):
         for j in range(i):
-            print(i, end='')
+            print(i, end="")
         print()
 
 
