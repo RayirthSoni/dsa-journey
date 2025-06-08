@@ -22,10 +22,7 @@ def get_rectangular_pattern(n: int):
         *****
         *****
     """
-    for i in range(n):
-        for j in range(n):
-            print("*", end="")
-        print()
+    pass
 
 
 def get_right_angled_triangle_star_pattern(n: int):
@@ -42,10 +39,7 @@ def get_right_angled_triangle_star_pattern(n: int):
         ****
         *****
     """
-    for i in range(1, n + 1):
-        for j in range(i):
-            print("*", end="")
-        print()
+    pass
 
 
 def get_right_angled_triangle_number_pattern(n: int):
@@ -81,14 +75,75 @@ def get_right_angled_triangle_number_2_pattern(n: int):
         4444
         55555
     """
-    for i in range(1, n + 1):
-        for j in range(i):
-            print(i, end="")
-        print()
+    pass
 
+def get_inverted_right_pyramid(n: int):
+    """
+    Function is used to print inverted right pyramid
 
-def get_inverted_right_pyramid():
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        *****
+        ****
+        ***
+        **
+        *
+    """
     pass
 
 
-get_right_angled_triangle_number_2_pattern(4)
+def get_inverted_numbered_right_pyramid(n: int):
+    """
+    Function is used to print inverted numbered right pyramid pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        12345
+        1234
+        123
+        12
+        1
+    """
+    pass
+
+
+def get_star_pyramid(n: int):
+    """
+    Function is used to print star pyramid pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+            *
+           ***
+          *****
+         *******
+        *********
+    """
+    pass
+
+
+def get_inverted_star_pyramid(n: int):
+    """
+    Function is used to print inverted star pyramid pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        *********
+         *******
+          *****
+           ***
+            *
+    """
+    pass
