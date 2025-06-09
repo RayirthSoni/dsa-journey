@@ -259,3 +259,21 @@ def get_number_crown_pattern(n: int):
         1234554321
     """
     pass
+
+
+def get_increasing_number_triangle_pattern(n: int):
+    """
+    Function is used to print increasing number triangle pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+        11 12 13 14
+    """
+    pass
