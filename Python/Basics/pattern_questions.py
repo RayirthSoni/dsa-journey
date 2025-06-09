@@ -297,3 +297,93 @@ def get_increasing_number_triangle_pattern(n: int):
             print(k, end=" ")
             k += 1
         print()
+
+
+def get_increasing_letter_triangle_pattern(n: int):
+    """
+    Function is used to print increasing letter triangle pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        A
+        A B
+        A B C
+        A B C D
+        A B C D E
+    """
+    pass
+
+
+def get_reverse_letter_triangle_pattern(n: int):
+    """
+    Function is used to print reverse letter triangle pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        A B C D E
+        A B C D
+        A B C
+        A B
+        A
+    """
+    pass
+
+
+def get_alpha_ramp_pattern(n: int):
+    """
+    Function is used to print alpha ramp pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        A
+        B B
+        C C C
+        D D D D
+        E E E E E
+    """
+    pass
+
+
+def get_alpha_hill_pattern(n: int):
+    """
+    Function is used to print alpha hill pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+            A
+           ABA
+          ABCBA
+         ABCDCBA
+        ABCDEDCBA
+    """
+    pass
+
+
+def get_alpha_triangle_pattern(n: int):
+    """
+    Function is used to print alpha triangle pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        E
+        D E
+        C D E
+        B C D E
+        A B C D E
+    """
+    pass
