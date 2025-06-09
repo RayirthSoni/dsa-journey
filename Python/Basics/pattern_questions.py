@@ -4,6 +4,7 @@ This script contains the questions based on patterns on looping concepts
 
 ## Ignore pylint warnings
 ## pylint: disable=line-too-long
+## pylint: disable=unused-variable
 
 
 def get_rectangular_pattern(n: int):
