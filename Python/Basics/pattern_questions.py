@@ -22,7 +22,10 @@ def get_rectangular_pattern(n: int):
         *****
         *****
     """
-    pass
+    for i in range(n):
+        for j in range(n):
+            print("*", end="")
+        print()
 
 
 def get_right_angled_triangle_star_pattern(n: int):
@@ -39,7 +42,10 @@ def get_right_angled_triangle_star_pattern(n: int):
         ****
         *****
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(i):
+            print("*", end="")
+        print()
 
 
 def get_right_angled_triangle_number_pattern(n: int):
@@ -57,7 +63,10 @@ def get_right_angled_triangle_number_pattern(n: int):
         1234
         12345
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            print(j, end="")
+        print()
 
 
 def get_right_angled_triangle_number_2_pattern(n: int):
@@ -75,7 +84,11 @@ def get_right_angled_triangle_number_2_pattern(n: int):
         4444
         55555
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(i, end="")
+        print()
+
 
 def get_inverted_right_pyramid(n: int):
     """
@@ -92,7 +105,10 @@ def get_inverted_right_pyramid(n: int):
         **
         *
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(n + 1 - i):
+            print("*", end="")
+        print()
 
 
 def get_inverted_numbered_right_pyramid(n: int):
@@ -110,7 +126,10 @@ def get_inverted_numbered_right_pyramid(n: int):
         12
         1
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(1, n + 2 - i):
+            print(j, end="")
+        print()
 
 
 def get_star_pyramid(n: int):
@@ -128,7 +147,12 @@ def get_star_pyramid(n: int):
          *******
         *********
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(n - i):
+            print(" ", end="")
+        for j in range(2 * i - 1):
+            print("*", end="")
+        print()
 
 
 def get_inverted_star_pyramid(n: int):
@@ -145,5 +169,93 @@ def get_inverted_star_pyramid(n: int):
           *****
            ***
             *
+    """
+    for i in range(1, n + 1):
+        for j in range(i - 1):
+            print(" ", end="")
+        for j in range(2 * (n - i) + 1):
+            print("*", end="")
+        print()
+
+
+def get_diamond_star_pattern(n: int):
+    """
+    Function is used to print diamond star pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+             *
+            ***
+           *****
+          *******
+         *********
+        ***********
+        ***********
+         *********
+          *******
+           *****
+            ***
+             *
+    """
+    pass
+
+
+def half_diamond_star_pattern(n: int):
+    """
+    Function is used to print half diamond star pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        *
+        **
+        ***
+        ****
+        *****
+        ****
+        ***
+        **
+        *
+    """
+    pass
+
+
+def get_binary_number_triangle_pattern(n: int):
+    """
+    Function is used to print binary number triangle pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        1
+        01
+        101
+        0101
+        10101
+    """
+    pass
+
+
+def get_number_crown_pattern(n: int):
+    """
+    Function is used to print number crown pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        1        1
+        12      21
+        123    321
+        1234  4321
+        1234554321
     """
     pass
