@@ -387,3 +387,88 @@ def get_alpha_triangle_pattern(n: int):
         A B C D E
     """
     pass
+
+
+def get_symmetric_void_pattern(n: int):
+    """
+    Function is used to print symmetric void pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        **********
+        ****  ****
+        ***    ***
+        **      **
+        *        *
+        *        *
+        **      **
+        ***    ***
+        ****  ****
+        **********
+    """
+    pass
+
+
+def get_symmetric_butterfly_pattern(n: int):
+    """
+    Function is used to print symmetric_butterfly_pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        *        *
+        **      **
+        ***    ***
+        ****  ****
+        **********
+        ****  ****
+        ***    ***
+        **      **
+        *        *
+    """
+    pass
+
+
+def get_hollow_rectangle_pattern(n: int):
+    """
+    Function is used to print hollow_rectangle_pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+    """
+    pass
+
+
+def get_number_pattern(n: int):
+    """
+    Function is used to print number_pattern
+
+    Args:
+        n (int): Number of rows
+
+    Example:
+        n = 5
+        5 5 5 5 5 5 5 5 5
+        5 4 4 4 4 4 4 4 5
+        5 4 3 3 3 3 3 4 5
+        5 4 3 2 2 2 3 4 5
+        5 4 3 2 1 2 3 4 5
+        5 4 3 2 2 2 3 4 5
+        5 4 3 3 3 3 3 4 5
+        5 4 4 4 4 4 4 4 5
+        5 5 5 5 5 5 5 5 5
+    """
+    pass
