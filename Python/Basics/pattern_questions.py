@@ -314,7 +314,10 @@ def get_increasing_letter_triangle_pattern(n: int):
         A B C D
         A B C D E
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord("A") + j), end=" ")
+        print()
 
 
 def get_reverse_letter_triangle_pattern(n: int):
@@ -350,7 +353,10 @@ def get_alpha_ramp_pattern(n: int):
         D D D D
         E E E E E
     """
-    pass
+    for i in range(n):
+        for j in range(i + 1):
+            print(chr(ord("A") + i), end=" ")
+        print()
 
 
 def get_alpha_hill_pattern(n: int):
@@ -449,7 +455,13 @@ def get_hollow_rectangle_pattern(n: int):
         *   *
         *****
     """
-    pass
+    for i in range(n):
+        for j in range(n):
+            if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()
 
 
 def get_number_pattern(n: int):
