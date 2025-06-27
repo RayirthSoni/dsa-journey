@@ -187,7 +187,7 @@ def get_diamond_star_pattern(n: int):
         n (int): Number of rows
 
     Example:
-        n = 5
+        n = 6
              *
             ***
            *****
@@ -201,7 +201,13 @@ def get_diamond_star_pattern(n: int):
             ***
              *
     """
-    pass
+    for i in range(1, 2*n+1):
+        for j in range():
+            pass
+        for j in range():
+            pass
+        print()
+
 
 
 def half_diamond_star_pattern(n: int):
