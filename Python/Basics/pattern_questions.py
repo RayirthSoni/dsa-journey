@@ -223,7 +223,11 @@ def half_diamond_star_pattern(n: int):
         **
         *
     """
-    pass
+    for i in range(1, 2 * n):
+        k = i if i <= n else 2 * n - i
+        for j in range(k):
+            print("*", end="")
+        print()
 
 
 def get_binary_number_triangle_pattern(n: int):
@@ -335,7 +339,10 @@ def get_reverse_letter_triangle_pattern(n: int):
         A B
         A
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(n + 1 - i):
+            print(chr(ord("A") + j), end=" ")
+        print()
 
 
 def get_alpha_ramp_pattern(n: int):
@@ -392,12 +399,15 @@ def get_alpha_triangle_pattern(n: int):
         B C D E
         A B C D E
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range():
+            print(chr(ord("A")), end=" ")
+        print()
 
 
 def get_symmetric_void_pattern(n: int):
     """
-    Function is used to print symmetric void pattern
+    Function is used to print symmetric void patter n
 
     Args:
         n (int): Number of rows
