@@ -476,7 +476,17 @@ def get_symmetric_butterfly_pattern(n: int):
         **      **
         *        *
     """
-    pass
+    for i in range(1, 2*n):
+        k = i if i <= n else 2*n - i
+        for j in range(k):
+            print("*", end="")
+        k = 2 * n - 2 * i if i <= n else 2*i - 2*n
+        for j in range(k):
+            print(" ", end="")
+        k = i if i <= n else 2*n - i
+        for j in range(k):
+            print("*", end="")
+        print()
 
 
 def get_hollow_rectangle_pattern(n: int):
