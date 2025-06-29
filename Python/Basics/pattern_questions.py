@@ -459,7 +459,7 @@ def get_symmetric_void_pattern(n: int):
 
 def get_symmetric_butterfly_pattern(n: int):
     """
-    Function is used to print symmetric_butterfly_pattern
+    Function is used to print symmetric butterfly pattern
 
     Args:
         n (int): Number of rows
@@ -491,7 +491,7 @@ def get_symmetric_butterfly_pattern(n: int):
 
 def get_hollow_rectangle_pattern(n: int):
     """
-    Function is used to print hollow_rectangle_pattern
+    Function is used to print hollow rectangle pattern
 
     Args:
         n (int): Number of rows
@@ -515,7 +515,7 @@ def get_hollow_rectangle_pattern(n: int):
 
 def get_number_pattern(n: int):
     """
-    Function is used to print number_pattern
+    Function is used to print number pattern
 
     Args:
         n (int): Number of rows
@@ -532,4 +532,6 @@ def get_number_pattern(n: int):
         5 4 4 4 4 4 4 4 5
         5 5 5 5 5 5 5 5 5
     """
-    pass
+    for i in range(1, 2*n):
+        for j in range():
+            pass
