@@ -393,7 +393,15 @@ def get_alpha_hill_pattern(n: int):
          ABCDCBA
         ABCDEDCBA
     """
-    pass
+    for i in range(1, n + 1):
+        for j in range(n - i):
+            print(" ", end="")
+
+        k = 'A'
+        for j in range(2*i-1):
+            print(k, end="")
+            k = chr(ord(k) + 1) if j < i - 1 else chr(ord(k) - 1)
+        print()
 
 
 def get_alpha_triangle_pattern(n: int):
