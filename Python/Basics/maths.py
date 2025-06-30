@@ -18,9 +18,11 @@ def get_digit_count(number: int, apporach: str):
     Brute:
         Extract the count of digits in number by division by 10 till n > 0
 
+
     Optimized:
         To get count of digits in number by using log n + 1
         Here we will take log to base 10 as that will give digit count on intuition
+
 
     Args:
         n (int): Number for computing digits count
