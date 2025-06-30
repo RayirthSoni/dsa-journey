@@ -533,5 +533,9 @@ def get_number_pattern(n: int):
         5 5 5 5 5 5 5 5 5
     """
     for i in range(1, 2*n):
-        for j in range():
-            pass
+        for j in range(1, 2*n):
+            if i == 1 or i == n or j == 1 or j == n:
+                print(n, end=" ")
+            else:
+                print(i, end=" ")
+        print()
