@@ -36,3 +36,27 @@ def get_digit_count(number: int, apporach: str):
         cnt = int(np.log10(number)) + 1
 
     return cnt
+
+
+def get_reverse_number(number):
+    pass
+
+
+def is_palindrome(number):
+    pass
+
+
+def get_gcd(a, b):
+    pass
+
+
+def is_armstrong_number(number):
+    pass
+
+
+def get_divisors(number):
+    pass
+
+
+def is_prime(number):
+    pass
